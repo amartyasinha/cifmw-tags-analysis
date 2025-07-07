@@ -1,0 +1,981 @@
+{
+  "ci/playbooks/edpm_build_images/edpm_image_builder.yml": {
+    "edpm_build_img": [
+      23,
+      30,
+      36
+    ]
+  },
+  "ci/playbooks/architecture/validate-architecture.yml": {
+    "edpm_deploy": [
+      199
+    ]
+  },
+  "ci/playbooks/pre-doc.yml": {
+    "golang": [
+      23
+    ]
+  },
+  "ci/playbooks/kuttl/deploy-deps.yaml": {
+    "infra": [
+      40,
+      54
+    ]
+  },
+  "ci/playbooks/tcib/tcib.yml": {
+    "container_img_build": [
+      17,
+      30,
+      51,
+      57,
+      63
+    ],
+    "build_openstack_packages": [
+      18,
+      31
+    ]
+  },
+  "deploy-edpm-reuse.yaml": {
+    "packages": [
+      80
+    ]
+  },
+  "deploy-edpm.yml": {
+    "infra": [
+      32,
+      44,
+      56
+    ],
+    "build-packages": [
+      67
+    ],
+    "build-containers": [
+      78
+    ],
+    "build-operators": [
+      91
+    ],
+    "edpm": [
+      102,
+      156,
+      161
+    ]
+  },
+  "hooks/playbooks/kustomize_cr.yml": {
+    "always": [
+      8,
+      14
+    ]
+  },
+  "playbooks/08-run-tests.yml": {
+    "tests": [
+      24
+    ]
+  },
+  "playbooks/02-infra.yml": {
+    "always": [
+      75
+    ]
+  },
+  "playbooks/adoption/infra.yml": {
+    "bootstrap_libvirt": [
+      18
+    ]
+  },
+  "playbooks/06-deploy-architecture.yml": {
+    "always": [
+      16,
+      23,
+      30,
+      50
+    ],
+    "edpm_bootstrap": [
+      43,
+      192,
+      204,
+      212,
+      220,
+      229,
+      240,
+      248
+    ],
+    "edpm_deploy": [
+      176,
+      183,
+      252,
+      258
+    ],
+    "storage": [
+      211,
+      247
+    ],
+    "operator": [
+      219
+    ],
+    "update_containers": [
+      228
+    ],
+    "set_openstack_containers": [
+      239
+    ],
+    "openstack_ca": [
+      269
+    ],
+    "edpm_post": [
+      270,
+      274
+    ]
+  },
+  "playbooks/multi-namespace/ns2_validation.yaml": {
+    "tests": [
+      7
+    ]
+  },
+  "playbooks/nfs.yml": {
+    "always": [
+      36
+    ],
+    "nft": [
+      108
+    ]
+  },
+  "playbooks/01-bootstrap.yml": {
+    "always": [
+      12,
+      21,
+      71
+    ],
+    "bootstrap": [
+      34,
+      41,
+      48,
+      56,
+      61,
+      65
+    ],
+    "packages": [
+      35,
+      42
+    ]
+  },
+  "playbooks/ceph.yml": {
+    "keypair": [
+      22
+    ],
+    "admin": [
+      64
+    ],
+    "block": [
+      106
+    ],
+    "spec": [
+      156
+    ],
+    "cephadm": [
+      248,
+      267
+    ],
+    "client": [
+      467
+    ]
+  },
+  "playbooks/update.yml": {
+    "update": [
+      84,
+      125
+    ],
+    "ceph_update": [
+      85
+    ]
+  },
+  "post-deployment.yml": {
+    "admin-setup": [
+      10
+    ],
+    "run-tests": [
+      20
+    ],
+    "compliance": [
+      30,
+      43
+    ],
+    "pre-end": [
+      51
+    ],
+    "logs": [
+      72
+    ]
+  },
+  "reproducer-clean.yml": {
+    "deepscrub": [
+      7,
+      15,
+      23,
+      31,
+      38,
+      45,
+      56,
+      64,
+      72,
+      81,
+      88
+    ],
+    "never": [
+      14,
+      22,
+      30,
+      80
+    ]
+  },
+  "reproducer.yml": {
+    "packages": [
+      53
+    ]
+  },
+  "roles/polarion/tasks/main.yml": {
+    "bootstrap": [
+      26
+    ],
+    "packages": [
+      27
+    ]
+  },
+  "roles/copy_container/tasks/main.yml": {
+    "bootstrap": [
+      17,
+      26
+    ],
+    "packages": [
+      18,
+      27
+    ]
+  },
+  "roles/artifacts/tasks/environment.yml": {
+    "always": [
+      4,
+      12
+    ]
+  },
+  "roles/artifacts/tasks/packages.yml": {
+    "bootstrap": [
+      4,
+      10
+    ],
+    "packages": [
+      5,
+      11
+    ]
+  },
+  "roles/artifacts/tasks/cleanup.yml": {
+    "always": [
+      4
+    ]
+  },
+  "roles/artifacts/tasks/main.yml": {
+    "always": [
+      24,
+      32,
+      50,
+      55,
+      60
+    ]
+  },
+  "roles/openshift_login/tasks/main.yml": {
+    "always": [
+      19,
+      88
+    ]
+  },
+  "roles/install_yamls/tasks/main.yml": {
+    "bootstrap": [
+      19,
+      31,
+      38,
+      60,
+      82,
+      90,
+      127,
+      134,
+      140,
+      146,
+      154,
+      160
+    ],
+    "always": [
+      174
+    ]
+  },
+  "roles/cifmw_ceph_client/tasks/main.yml": {
+    "k8s": [
+      58,
+      66,
+      74
+    ]
+  },
+  "roles/test_deps/tasks/main.yml": {
+    "always": [
+      22,
+      38
+    ],
+    "bootstrap": [
+      101,
+      110,
+      122,
+      133,
+      144
+    ],
+    "packages": [
+      102,
+      111,
+      123,
+      134,
+      145
+    ]
+  },
+  "roles/update/tasks/main.yml": {
+    "always": [
+      150
+    ]
+  },
+  "roles/edpm_deploy_baremetal/tasks/main.yml": {
+    "always": [
+      72
+    ]
+  },
+  "roles/nat64_appliance/tasks/main.yml": {
+    "packages": [
+      34,
+      46
+    ]
+  },
+  "roles/edpm_prepare/tasks/main.yml": {
+    "always": [
+      23,
+      34
+    ],
+    "control-plane": [
+      66,
+      79,
+      90,
+      93,
+      133,
+      148,
+      179,
+      189,
+      192,
+      199,
+      208
+    ]
+  },
+  "roles/edpm_deploy/tasks/main.yml": {
+    "always": [
+      22,
+      38
+    ]
+  },
+  "roles/kustomize_deploy/tasks/execute_step.yml": {
+    "deploy_architecture_stage_": [
+      91
+    ]
+  },
+  "roles/cifmw_nfs/tasks/main.yml": {
+    "always": [
+      19
+    ],
+    "nft": [
+      91
+    ]
+  },
+  "roles/operator_build/tasks/main.yml": {
+    "always": [
+      19,
+      30
+    ]
+  },
+  "roles/build_containers/tasks/install.yml": {
+    "packages": [
+      4
+    ]
+  },
+  "roles/cifmw_cephadm/tasks/export.yml": {
+    "cephadm_mon_dump": [
+      34
+    ],
+    "cephadm_extract_keys": [
+      67
+    ]
+  },
+  "roles/cifmw_cephadm/tasks/bootstrap.yml": {
+    "cephadm_bootstrap": [
+      48
+    ]
+  },
+  "roles/cifmw_cephadm/tasks/pre.yml": {
+    "always": [
+      22
+    ],
+    "cephadm_bootstrap": [
+      33
+    ]
+  },
+  "roles/edpm_build_images/tasks/add_cert.yml": {
+    "bootstrap": [
+      30
+    ],
+    "packages": [
+      31
+    ]
+  },
+  "roles/edpm_build_images/tasks/install.yml": {
+    "bootstrap": [
+      17,
+      26
+    ],
+    "packages": [
+      18
+    ]
+  },
+  "roles/pkg_build/tasks/main.yml": {
+    "always": [
+      19,
+      30
+    ]
+  },
+  "roles/ci_nmstate/tasks/nmstate_unmanaged_provision_node.yml": {
+    "packages": [
+      14
+    ]
+  },
+  "roles/cifmw_block_device/tasks/cleanup.yml": {
+    "systemd": [
+      18
+    ]
+  },
+  "roles/cifmw_block_device/tasks/main.yml": {
+    "systemd": [
+      64
+    ]
+  },
+  "roles/build_openstack_packages/tasks/install_dlrn.yml": {
+    "bootstrap": [
+      18,
+      40
+    ],
+    "packages": [
+      19,
+      41
+    ]
+  },
+  "roles/adoption_osp_deploy/tasks/deploy_overcloud_stack.yml": {
+    "{{ overcloud_tags }}": [
+      18,
+      22,
+      38,
+      46,
+      56,
+      60,
+      76
+    ]
+  },
+  "roles/adoption_osp_deploy/tasks/main.yml": {
+    "undercloud": [
+      50,
+      54,
+      71,
+      80,
+      99,
+      107,
+      124,
+      133
+    ]
+  },
+  "roles/openshift_setup/tasks/main.yml": {
+    "always": [
+      19
+    ]
+  },
+  "roles/config_drive/tasks/main.yml": {
+    "packages": [
+      28
+    ]
+  },
+  "roles/devscripts/tasks/100_pre.yml": {
+    "always": [
+      20,
+      25,
+      30
+    ],
+    "bootstrap": [
+      31
+    ]
+  },
+  "roles/devscripts/tasks/130_prep_host.yml": {
+    "bootstrap": [
+      19,
+      25,
+      30,
+      34,
+      39,
+      44,
+      50,
+      54,
+      62
+    ],
+    "packages": [
+      20
+    ]
+  },
+  "roles/devscripts/tasks/110_check_ocp.yml": {
+    "always": [
+      20,
+      24,
+      130
+    ]
+  },
+  "roles/devscripts/tasks/cleanup.yml": {
+    "never": [
+      19
+    ],
+    "deepscrub": [
+      20
+    ]
+  },
+  "roles/devscripts/tasks/112_verify_golden_image.yml": {
+    "always": [
+      81
+    ]
+  },
+  "roles/devscripts/tasks/main.yml": {
+    "always": [
+      19,
+      23,
+      28
+    ],
+    "devscripts_deploy": [
+      33
+    ],
+    "bootstrap": [
+      34
+    ]
+  },
+  "roles/devscripts/tasks/111_verify_cluster.yml": {
+    "always": [
+      58
+    ]
+  },
+  "roles/devscripts/tasks/300_post.yml": {
+    "always": [
+      24
+    ],
+    "devscripts_deploy": [
+      34
+    ]
+  },
+  "roles/ci_setup/tasks/packages.yml": {
+    "bootstrap": [
+      4,
+      12,
+      33
+    ],
+    "packages": [
+      5,
+      13,
+      34
+    ]
+  },
+  "roles/ci_setup/tasks/repos.yml": {
+    "bootstrap": [
+      21,
+      59
+    ],
+    "packages": [
+      22,
+      60
+    ]
+  },
+  "roles/ci_setup/tasks/cleanup.yml": {
+    "cleanup": [
+      4,
+      11
+    ]
+  },
+  "roles/ci_setup/tasks/load_vars.yml": {
+    "always": [
+      4
+    ]
+  },
+  "roles/ci_setup/tasks/main.yml": {
+    "always": [
+      19,
+      24,
+      29,
+      34
+    ]
+  },
+  "roles/ci_setup/tasks/directories.yml": {
+    "always": [
+      12
+    ]
+  },
+  "roles/repo_setup/tasks/install.yml": {
+    "packages": [
+      18
+    ],
+    "bootstrap": [
+      19
+    ]
+  },
+  "roles/cifmw_setup/tasks/run_tests.yml": {
+    "tests": [
+      10
+    ]
+  },
+  "roles/cifmw_setup/tasks/bootstrap.yml": {
+    "always": [
+      4,
+      12,
+      63
+    ],
+    "bootstrap": [
+      26,
+      33,
+      40,
+      48,
+      53,
+      57
+    ],
+    "packages": [
+      27,
+      34
+    ]
+  },
+  "roles/cifmw_setup/tasks/infra.yml": {
+    "always": [
+      36
+    ]
+  },
+  "roles/openshift_provisioner_node/tasks/add_virtual_network.yml": {
+    "bootstrap": [
+      19,
+      29,
+      38
+    ]
+  },
+  "roles/openshift_provisioner_node/tasks/install_packages.yml": {
+    "packages": [
+      19
+    ],
+    "bootstrap": [
+      20
+    ]
+  },
+  "roles/openshift_provisioner_node/tasks/add_user.yml": {
+    "bootstrap": [
+      19,
+      30,
+      39
+    ]
+  },
+  "roles/openshift_provisioner_node/tasks/add_bridges.yml": {
+    "bootstrap": [
+      19,
+      28,
+      38,
+      46
+    ]
+  },
+  "roles/openshift_provisioner_node/tasks/main.yml": {
+    "bootstrap": [
+      19,
+      28,
+      35,
+      41,
+      47,
+      56
+    ],
+    "packages": [
+      34
+    ]
+  },
+  "roles/libvirt_manager/tasks/packages.yml": {
+    "bootstrap": [
+      20
+    ],
+    "packages": [
+      21
+    ]
+  },
+  "roles/libvirt_manager/tasks/deploy_layout.yml": {
+    "bootstrap": [
+      34
+    ],
+    "bootstrap_layout": [
+      35
+    ]
+  },
+  "roles/libvirt_manager/tasks/main.yml": {
+    "always": [
+      19
+    ],
+    "bootstrap": [
+      27,
+      34,
+      42,
+      49
+    ],
+    "bootstrap_layout": [
+      28,
+      36,
+      43,
+      50
+    ],
+    "bootstrap_libvirt": [
+      29,
+      37,
+      44,
+      51
+    ],
+    "packages": [
+      34
+    ]
+  },
+  "roles/cifmw_ceph/tasks/main.yml": {
+    "keypair": [
+      23
+    ],
+    "admin": [
+      39
+    ],
+    "block": [
+      49
+    ],
+    "spec": [
+      62
+    ],
+    "cephadm": [
+      66,
+      118
+    ],
+    "client": [
+      133
+    ]
+  },
+  "roles/registry_deploy/tasks/main.yml": {
+    "bootstrap": [
+      20,
+      50,
+      70
+    ],
+    "packages": [
+      21
+    ]
+  },
+  "roles/reproducer/tasks/ci_job.yml": {
+    "bootstrap": [
+      34,
+      42,
+      50,
+      58,
+      71,
+      79,
+      87,
+      159
+    ],
+    "always": [
+      105
+    ]
+  },
+  "roles/reproducer/tasks/reuse_main.yaml": {
+    "bootstrap_layout": [
+      19,
+      26
+    ],
+    "always": [
+      30,
+      58,
+      81,
+      114
+    ],
+    "bootstrap": [
+      157
+    ],
+    "deploy_architecture": [
+      188,
+      193,
+      200
+    ],
+    "bootstrap_env": [
+      225
+    ]
+  },
+  "roles/reproducer/tasks/libvirt_layout.yml": {
+    "libvirt_layout": [
+      4
+    ],
+    "bootstrap": [
+      60,
+      70,
+      84,
+      90
+    ],
+    "bootstrap_layout": [
+      61,
+      71,
+      85,
+      91
+    ],
+    "bootstrap_env": [
+      72
+    ]
+  },
+  "roles/reproducer/tasks/configure_architecture.yml": {
+    "always": [
+      24
+    ]
+  },
+  "roles/reproducer/tasks/configure_controller.yml": {
+    "bootstrap": [
+      118,
+      133,
+      334
+    ],
+    "bootstrap_layout": [
+      335
+    ],
+    "bootstrap_env": [
+      385
+    ]
+  },
+  "roles/reproducer/tasks/configure_post_deployment.yml": {
+    "always": [
+      24
+    ]
+  },
+  "roles/reproducer/tasks/configure_cleanup.yaml": {
+    "always": [
+      7,
+      53
+    ]
+  },
+  "roles/reproducer/tasks/main.yml": {
+    "bootstrap": [
+      19,
+      148,
+      155,
+      179,
+      186,
+      199,
+      208,
+      224,
+      231,
+      245,
+      266,
+      330,
+      367
+    ],
+    "bootstrap_layout": [
+      20,
+      26,
+      33,
+      66,
+      140,
+      150,
+      157,
+      165,
+      172,
+      180,
+      187,
+      200,
+      209,
+      225,
+      232,
+      246,
+      331
+    ],
+    "always": [
+      37,
+      75,
+      89,
+      101,
+      124,
+      281
+    ],
+    "bootstrap_env": [
+      65,
+      149,
+      156,
+      166,
+      173,
+      226,
+      233
+    ],
+    "bootstrap_nat64": [
+      164,
+      171
+    ],
+    "crc_layout": [
+      181,
+      188
+    ],
+    "libvirt_layout": [
+      201
+    ],
+    "devscripts_layout": [
+      202,
+      210
+    ],
+    "ocp_layout": [
+      203,
+      211
+    ],
+    "bootstrap_repositories": [
+      265
+    ],
+    "deploy_architecture": [
+      368,
+      373,
+      380
+    ]
+  },
+  "roles/rhol_crc/tasks/dependencies.yml": {
+    "bootstrap": [
+      20
+    ],
+    "packages": [
+      21
+    ]
+  },
+  "roles/rhol_crc/tasks/cleanup.yml": {
+    "never": [
+      35
+    ],
+    "deepscrub": [
+      36
+    ]
+  },
+  "roles/rhol_crc/tasks/main.yml": {
+    "always": [
+      19,
+      31,
+      37,
+      42,
+      54
+    ]
+  },
+  "tests/integration/targets/make/tasks/ci_make.yml": {
+    "never": [
+      117
+    ]
+  },
+  "update-edpm.yml": {
+    "update": [
+      21
+    ],
+    "run-tests": [
+      37
+    ],
+    "logs": [
+      49
+    ]
+  }
+}
